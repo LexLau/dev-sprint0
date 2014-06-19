@@ -1,6 +1,6 @@
 # Text answers from Week 0
 
-# Name:
+# Name: Alex
 
 
 
@@ -11,24 +11,27 @@ Explain what each of the following lines does. Use the terminology you learned f
 	bob = Turtle()
 	wait_for_user()
 
-Answer:
-
-
-
-
-
+Answer: First line imports TurtleWorld file so instances of TurtleWorld objects can be created
+		and functions in the TurtleWorld file can be used.
+	Second line creates a world object, the screen that the turtle navigates in
+	Third line creates a turtle object that sits in the middle of the world
+	Fourth line pauses and waits for the user to close, otherwise the window will close
+		on its own, the world will terminate once the code is complete
 
 These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
-Answer:
+Answer: 4 arguments: t has to be a Turtle; n is the number of sides, so it has to be an 
+	integer; length of each side should be a positive number, and angle must be a 
+	number, understood in degrees
 
 -- What two turtle functions did you use to draw the sides of the polygon?
-Answer:
+Answer: 1st we need to figure out the angle to turn the turtle, 360 / n sides.
+	2nd we need to use Polyline function to draw the polygon, by providing the turtle,
+		n number of sides, length of each side, and the angle of each turn
 
 -- What are the arguments for polyline?  What type is each argument?
-Answer:
-
+Answer:	4 arguments: t Turtle object; n number of sides, length of each side, angle of each turn
 
 
 
@@ -36,10 +39,10 @@ Answer:
 Suppose you wrote a function, center_circle(), that draws a circle of a given radius around the current location of the turtle and restores the turtle to its starting point.
 
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
-Answer:
+Answer: Move function, requires pen up pu(turtle) function, then fd or bk(turtle, radius = 100), pen down pd(turtle), and lt or rt(turtle)
 
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
-Answer:
+Answer: Another move function, lt or rt(turtle) the reverse of above, pen up pu(turtle), fd or bk(turtle, 100) reverse of above, then if desired, pd(turtle) 
 
 -- What is this type of requirement called?
-Answer:
+Answer: precondition and postcondition?
